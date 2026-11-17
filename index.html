@@ -4,64 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - João</title>
+    <!-- Linkando o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- HEADER / INFORMAÇÕES PESSOAIS -->
-        <header>
-            <h1 id="fullName"></h1>
-            <div class="professional-title" id="professionalTitle"></div>
-            <div class="contact-info">
-                <span id="email"></span>
-                <span id="phone"></span>
-                <span id="location"></span>
-                <span>GitHub: <a id="github" href="#" target="_blank"></a></span>
+    <main class="cv-container">
+        <!-- Cabeçalho com Foto e Informações Pessoais -->
+        <header class="cv-header">
+            <!-- A foto será inserida dinamicamente aqui pelo JavaScript -->
+            <div id="photoContainer"></div>
+            
+            <div class="header-info">
+                <h1 id="fullName"></h1>
+                <h2 id="professionalTitle"></h2>
+                <p id="email"></p>
+                <p id="phone"></p>
+                <p id="location"></p>
+                <p><a id="github" href="#" target="_blank"></a></p>
             </div>
         </header>
 
-        <!-- RESUMO PROFISSIONAL -->
-        <section>
-            <h2>Resumo Profissional</h2>
+        <!-- Resumo Profissional -->
+        <section class="cv-section">
+            <h3>Resumo Profissional</h3>
             <p id="summaryDescription"></p>
             <p><strong>Objetivo:</strong> <span id="careerObjective"></span></p>
         </section>
 
-        <!-- EXPERIÊNCIA -->
-        <section>
-            <h2>Experiência Profissional</h2>
+        <!-- Experiência Profissional -->
+        <section class="cv-section">
+            <h3>Experiência Profissional</h3>
             <div id="experienceContainer"></div>
         </section>
 
-        <!-- EDUCAÇÃO -->
-        <section>
-            <h2>Formação Acadêmica</h2>
+        <!-- Educação -->
+        <section class="cv-section">
+            <h3>Educação</h3>
             <div id="educationContainer"></div>
         </section>
 
-        <!-- HABILIDADES -->
-        <section>
-            <h2>Habilidades e Tecnologias</h2>
-            <p><strong>Técnicas / Ferramentas:</strong></p>
-            <ul id="skillsContainer" class="tags-container"></ul>
-            <p><strong>Metodologias:</strong> <span id="methodologies"></span></p>
+        <!-- Habilidades -->
+        <section class="cv-section">
+            <h3>Habilidades Técnicas</h3>
+            <ul id="skillsContainer" class="skills-list"></ul>
+            <p><strong>Metodologias/Ferramentas:</strong> <span id="methodologies"></span></p>
         </section>
 
-        <!-- PROJETOS -->
-        <section>
-            <h2>Projetos</h2>
+        <!-- Projetos -->
+        <section class="cv-section">
+            <h3>Projetos</h3>
             <div id="projectsContainer"></div>
         </section>
 
-        <!-- IDIOMAS -->
-        <section>
-            <h2>Idiomas</h2>
-            <p id="languagesContainer"></p>
+        <!-- Idiomas -->
+        <section class="cv-section">
+            <h3>Idiomas</h3>
+            <div id="languagesContainer"></div>
         </section>
-    </div>
+    </main>
 
-    <!-- Importação do arquivo JavaScript -->
-    <script src="script.js"></script>
+    <!-- Linkando o arquivo JavaScript (o 'defer' garante que o script rode após o HTML carregar) -->
+    <script src="script.js" defer></script>
 </body>
 </html>
