@@ -10,7 +10,7 @@ const currículo = [
     "personalInformation": {
       "fullName": "João",
       "professionalTitle": "Desenvolvedor",
-      "profilePhoto": "",
+      "profilePhoto": "photo.png",
       "email": "damascenojoaovictor02@gmail.com",
       "phone": "11993746492",
       "whatsapp": "11993746492",
