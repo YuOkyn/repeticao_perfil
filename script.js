@@ -1,194 +1,211 @@
-window.addEventListener("DOMContentLoaded", () => {
-    // SEU JSON ORIGINAL INALTERADO
-    const currículo = [
-    {
-      "cv": {
-        "metadata": {
-          "version": "1.0",
-          "language": "pt-BR",
-          "lastUpdated": "2026-11-05"
-        },
-        "personalInformation": {
-          "fullName": "João",
-          "professionalTitle": "Desenvolvedor",
-          "profilePhoto": "photo.jpg",
-          "email": "damascenojoaovictor02@gmail.com",
-          "phone": "11993746492",
-          "whatsapp": "11993746492",
-          "location": {
-            "city": "Suzano",
-            "state": "SP",
-            "country": "Brasil",
-            "address": "Rua dos Mogi das cruzes 1001"
-          },
-          "linkedin": "João Victor Damasceno Vieira",
-          "github": "github.com/YuOkyn",
-          "portfolio": "github.com/YuOkyn",
-          "website": "github.com/YuOkyn"
-        },
-        "professionalSummary": {
-          "description": "Desenvolvedor full stack",
-          "yearsOfExperience": 0,
-          "mainSpecialization": "backend",
-          "careerObjective": "Ser um desenvolvedor de carreira e estável profissionalmente"
-        },
-        "professionalExperience": [
-          {
-            "company": "Americanas S.A",
-            "position": "Operador",
-            "employmentType": "",
-            "location": "Suzano",
-            "startDate": "10/02/2024",
-            "endDate": "10/11/2026",
-            "current": false,
-            "description": "Realizar serviços inerentes à loja",
-            "responsibilities": ["Atendimento e organização"],
-            "achievements": ["Boa comunicação"],
-            "technologies": []
-          }
-        ],
-        "education": [
-          {
-            "institution": "Unipiaget Suzano",
-            "degree": "",
-            "fieldOfStudy": "",
-            "level": "1",
-            "startDate": "10/08/2026",
-            "endDate": "",
-            "current": true,
-            "description": "Análise e desenvolvimento de sistemas"
-          }
-        ],
-        "skills": {
-          "technical": [
-            {
-              "name": "HTML, CSS, JavaScript, PostgreSQL, Python",
-              "level": "1"
-            }
-          ],
-          "behavioral": [],
-          "tools": ["Git"],
-          "methodologies": ["Projetos no git"]
-        },
-        "languages": [
-          {
-            "name": "Inglês",
-            "proficiency": "básico/médio"
-          }
-        ],
-        "certifications": [],
-        "projects": [
-          {
-            "name": "Simulador de juros",
-            "description": "Simula parcelamentos com uma determinada taxa e amortização",
-            "role": "",
-            "technologies": ["HTML, CSS e JavaScript"],
-            "url": "Yuokyn.github.io/sim-juros",
-            "startDate": "09/2026",
-            "endDate": "10/2026"
-          }
-        ],
-        "courses": [],
-        "additionalInformation": {
-          "availability": "",
-          "workModel": "",
-          "travelAvailability": false,
-          "additionalNotes": ""
-        },
-        "preferences": {
-          "targetPositions": [],
-          "targetIndustries": [],
-          "preferredLocations": [],
-          "preferredWorkModel": ""
-        }
-      }
-    }
-    ];
+const curriculo = {
+  "cv": {
+    "metadata": {
+      "version": "1.0",
+      "language": "pt-BR",
+      "lastUpdated": "2026-11-05"
+    },
+    "personalInformation": {
+      "fullName": "João Victor Damasceno Vieira",
+      "professionalTitle": "Desenvolvedor",
+      "profilePhoto": "foto.jpg",
+      "email": "damascenojoaovictor02@gmail.com",
+      "phone": "(11) 993746492",
+      "whatsapp": "(11) 993746492",
+      "location": {
+        "city": "Suzano",
+        "state": "São paulo",
+        "country": "Brasil",
+        "address": "Rua assunção 15"
+      },
+      "linkedin": "João Victor Damasceno Vieira",
+      "github": "github.com/YuOkyn",
+      "portfolio": "yuokyn.github.io/",
+      "website": "yuokyn.github.io/profile-page"
+    },
+    "professionalSummary": {
+      "description": "Desenvolvedor de sistemas full stack",
+      "yearsOfExperience": 0,
+      "mainSpecialization": "backend",
+      "careerObjective": "Ser desenvolvedor pleno e estável na carreira"
+    },
+    "professionalExperience": [
+      {
+        "company": "Americanas S.A",
+        "position": "Operador",
+        "employmentType": "",
+        "location": "Suzano",
+        "startDate": "10/02/2024",
+        "endDate": "10/11/2026",
+        "current": false,
+        "description": "",
+        "responsibilities": [],
+        "achievements": [],
+        "technologies": []
+      }
+    ]
+    ,
+    "education": [
+      {
+        "institution": "Unipiaget Suzano",
+        "degree": "",
+        "fieldOfStudy": "",
+        "level": "1",
+        "startDate": "10/08/2026",
+        "endDate": "",
+        "current": false,
+        "description": ""
+      }
+    ],
+    "skills": {
+      "technical": [
+        {
+          "name": "",
+          "level": ""
+        }
+      ],
+      "behavioral": [],
+      "tools": [],
+      "methodologies": []
+    },
+    "languages": [
+      {
+        "name": "",
+        "proficiency": ""
+      }
+    ],
+    "certifications": [
+      {
+        "name": "",
+        "issuer": "",
+        "issueDate": "",
+        "expirationDate": "",
+        "credentialUrl": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "",
+        "description": "",
+        "role": "",
+        "technologies": [],
+        "url": "",
+        "startDate": "",
+        "endDate": ""
+      }
+    ],
+    "courses": [
+      {
+        "name": "",
+        "institution": "",
+        "completionDate": "",
+        "workloadHours": 0
+      }
+    ],
+    "additionalInformation": {
+      "availability": "",
+      "workModel": "",
+      "travelAvailability": false,
+      "additionalNotes": ""
+    },
+    "preferences": {
+      "targetPositions": [],
+      "targetIndustries": [],
+      "preferredLocations": [],
+      "preferredWorkModel": ""
+    }
+  }
+}
 
-    // SCRIPT PARA LER O JSON E PREENCHER O HTML DINAMICAMENTE
-    const cvData = currículo[0].cv;
-    const pInfo = cvData.personalInformation;
+const cv = curriculo.cv
+const infop = cv.personalInformation
+const loc = infop.location
+function inserir (id, valor){
+    document.getElementById(id).innerHTML = valor
+}
+document.getElementById("profilePhoto").src = infop.profilePhoto
+inserir ("fullName", infop.fullName)
+inserir ("email", infop.email)
+inserir ("whatsapp",infop.whatsapp)
+inserir ("location", loc.city+", "+loc.state+", "+loc.country+", "+loc.address)
 
-    // Inserindo a Foto de Perfil dinamicamente
-    const photoContainer = document.getElementById("photoContainer");
-    if (photoContainer) {
-        photoContainer.innerHTML = `<img src="${pInfo.profilePhoto}" alt="Foto de ${pInfo.fullName}" class="foto-perfil">`;
-    }
+const resumo = cv.professionalSummary
 
-    // Dados Pessoais
-    document.getElementById("fullName").innerText = pInfo.fullName;
-    document.getElementById("professionalTitle").innerText = pInfo.professionalTitle;
-    document.getElementById("email").innerText = `Email: ${pInfo.email}`;
-    document.getElementById("phone").innerText = `Telefone: ${pInfo.phone}`;
-    document.getElementById("location").innerText = `Local: ${pInfo.location.city} - ${pInfo.location.state}`;
+inserir("description", resumo.description)
+inserir("yearsOfExperience", resumo.yearsOfExperience)
+inserir("mainSpecialization", resumo.mainSpecialization)
+inserir("careerObjective", resumo.careerObjective)
 
-    const githubEl = document.getElementById("github");
-    githubEl.href = `https://${pInfo.github}`;
-    githubEl.innerText = pInfo.github;
+const exp = cv.professionalExperience[0]
 
-    // Resumo
-    document.getElementById("summaryDescription").innerText = cvData.professionalSummary.description;
-    document.getElementById("careerObjective").innerText = cvData.professionalSummary.careerObjective;
+inserir("company", exp.company)
+inserir("position", exp.position)
+inserir("employmentType", exp.employmentType)
+inserir("experienceLocation", exp.location)
+inserir("startDate", exp.startDate)
+inserir("endDate", exp.endDate)
+inserir("experienceDescription", exp.description)
 
-    // Experiência Profissional
-    const expContainer = document.getElementById("experienceContainer");
-    cvData.professionalExperience.forEach(exp => {
-        expContainer.innerHTML += `
-            <div class="item">
-                <div class="item-header">
-                    <span>${exp.position} - ${exp.company}</span>
-                    <span class="date">${exp.startDate} a ${exp.endDate}</span>
-                </div>
-                <p><strong>Local:</strong> ${exp.location}</p>
-                <p>${exp.description}</p>
-                <p><strong>Responsabilidades:</strong> ${exp.responsibilities.join(", ")}</p>
-                <p><strong>Destaques:</strong> ${exp.achievements.join(", ")}</p>
-            </div>
-        `;
-    });
+const formacao = cv.education[0]
 
-    // Educação
-    const eduContainer = document.getElementById("educationContainer");
-    cvData.education.forEach(edu => {
-        eduContainer.innerHTML += `
-            <div class="item">
-                <div class="item-header">
-                    <span>${edu.institution}</span>
-                    <span class="date">Início: ${edu.startDate}</span>
-                </div>
-                <p>${edu.description}</p>
-            </div>
-        `;
-    });
+inserir("institution", formacao.institution)
+inserir("degree", formacao.degree)
+inserir("fieldOfStudy", formacao.fieldOfStudy)
+inserir("educationLevel", formacao.level)
+inserir("educationStart", formacao.startDate)
+inserir("educationEnd", formacao.endDate)
+inserir("educationDescription", formacao.description)
 
-    // Habilidades
-    const skillsContainer = document.getElementById("skillsContainer");
-    if (cvData.skills.technical.length > 0) {
-        const techs = cvData.skills.technical[0].name.split(",");
-        techs.forEach(tech => {
-            skillsContainer.innerHTML += `<li class="tag">${tech.trim()}</li>`;
-        });
-    }
-    document.getElementById("methodologies").innerText = cvData.skills.methodologies.join(", ");
+const hab = cv.skills
 
-    // Projetos
-    const projContainer = document.getElementById("projectsContainer");
-    cvData.projects.forEach(proj => {
-        projContainer.innerHTML += `
-            <div class="item">
-                <div class="item-header">
-                    <a href="https://${proj.url}" target="_blank">${proj.name}</a>
-                    <span class="date">${proj.startDate} - ${proj.endDate}</span>
-                </div>
-                <p>${proj.description}</p>
-                <p><strong>Tecnologias:</strong> ${proj.technologies.join(", ")}</p>
-            </div>
-        `;
-    });
+inserir("technical", hab.technical[0].name)
+inserir("technicalLevel", hab.technical[0].level)
 
-    // Idiomas
-    const langContainer = document.getElementById("languagesContainer");
-    cvData.languages.forEach(lang => {
-        langContainer.innerHTML += `<p>${lang.name} (${lang.proficiency})</p>`;
-    });
-});
+inserir("behavioral", hab.behavioral.join(", "))
+inserir("tools", hab.tools.join(", "))
+inserir("methodologies", hab.methodologies.join(", "))
+
+const idiomas = cv.languages[0]
+
+inserir("language", idiomas.name)
+inserir("proficiency", idiomas.proficiency)
+
+const cert = cv.certifications[0]
+
+inserir("certification", cert.name)
+inserir("issuer", cert.issuer)
+inserir("issueDate", cert.issueDate)
+inserir("expirationDate", cert.expirationDate)
+inserir("credentialUrl", cert.credentialUrl)
+
+const projetos = cv.projects[0]
+
+inserir("projectName", projetos.name)
+inserir("projectDescription", projetos.description)
+inserir("projectRole", projetos.role)
+inserir("projectUrl", projetos.url)
+inserir("projectStart", projetos.startDate)
+inserir("projectEnd", projetos.endDate)
+
+const cursos = cv.courses[0]
+
+inserir("courseName", cursos.name)
+inserir("courseInstitution", cursos.institution)
+inserir("completionDate", cursos.completionDate)
+inserir("workloadHours", cursos.workloadHours)
+
+const adicional = cv.additionalInformation
+
+inserir("availability", adicional.availability)
+inserir("workModel", adicional.workModel)
+inserir("travelAvailability", adicional.travelAvailability ? "Sim" : "Não")
+inserir("additionalNotes", adicional.additionalNotes)
+
+const pref = cv.preferences
+
+inserir("targetPositions", pref.targetPositions.join(", "))
+inserir("targetIndustries", pref.targetIndustries.join(", "))
+inserir("preferredLocations", pref.preferredLocations.join(", "))
+inserir("preferredWorkModel", pref.preferredWorkModel)
+
+
