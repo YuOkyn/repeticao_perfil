@@ -1,106 +1,197 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+background: #e9edf2;
+color: #333;
+padding: 25px 12px;
 }
 
-.cv-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+/* ESTRUTURA PRINCIPAL */
+
+#curriculo {
+max-width: 850px;
+margin: auto;
+background: white;
+padding: 40px;
+border-radius: 10px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-.cv-header {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
+/* CABEÇALHO */
+
+#cabecalho {
+display: flex;
+align-items: center;
+gap: 25px;
+padding-bottom: 25px;
+border-bottom: 3px solid #2563eb;
 }
 
-.foto-perfil {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #4f46e5;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+#foto-container img {
+width: 115px;
+height: 115px;
+border-radius: 50%;
+object-fit: cover;
+background: #ddd;
 }
 
-.header-info h1 {
-    margin: 0 0 5px 0;
-    color: #111;
+#fullName {
+font-size: 30px;
+color: #1e293b;
+margin-bottom: 8px;
 }
 
-.header-info h2 {
-    margin: 0 0 15px 0;
-    color: #4f46e5;
-    font-size: 1.2rem;
+#professionalTitle {
+color: #2563eb;
+font-size: 18px;
+margin-bottom: 8px;
 }
 
-.header-info p {
-    margin: 4px 0;
-    font-size: 0.95rem;
-    color: #555;
+#location {
+color: #64748b;
+font-size: 14px;
 }
 
-.cv-section {
-    margin-bottom: 25px;
+/* SEÇÕES */
+
+section {
+margin-top: 28px;
 }
 
-.cv-section h3 {
-    border-bottom: 2px solid #4f46e5;
-    padding-bottom: 5px;
-    color: #4f46e5;
-    margin-bottom: 15px;
+section h2 {
+color: #1e293b;
+font-size: 19px;
+padding-bottom: 9px;
+margin-bottom: 15px;
+border-bottom: 1px solid #dbe2ea;
 }
 
-.item {
-    margin-bottom: 15px;
+section h3 {
+color: #2563eb;
+font-size: 15px;
+margin: 15px 0 8px;
 }
 
-.item-header {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    margin-bottom: 5px;
+section p {
+font-size: 14px;
+line-height: 1.7;
+color: #475569;
 }
 
-.date {
-    color: #666;
-    font-weight: normal;
-    font-size: 0.9rem;
+/* CONTATOS */
+
+#contatos-lista {
+display: flex;
+flex-wrap: wrap;
+gap: 10px 20px;
 }
 
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 10px 0;
+#contatos-lista a {
+color: #2563eb;
+font-size: 14px;
+text-decoration: none;
 }
 
-.tag {
-    background-color: #e0e7ff;
-    color: #3730a3;
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    font-weight: bold;
+/* RESUMO */
+
+#resumo-detalhes {
+margin-top: 12px;
 }
 
-a {
-    color: #4f46e5;
-    text-decoration: none;
+/* EXPERIÊNCIAS, FORMAÇÃO E PROJETOS */
+
+.experiencia-item,
+.formacao-item,
+.projeto-item,
+.curso-item,
+.certificacao-item,
+.idioma-item {
+padding: 12px 0;
+border-bottom: 1px solid #e2e8f0;
 }
+
+.experiencia-item h3,
+.formacao-item h3,
+.projeto-item h3 {
+color: #1e293b;
+margin-bottom: 5px;
+}
+
+/* HABILIDADES */
+
+#habilidades div {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+}
+
+.habilidade {
+background: #eff6ff;
+color: #1d4ed8;
+padding: 7px 12px;
+border-radius: 5px;
+font-size: 13px;
+}
+
+/* IDIOMAS E CERTIFICAÇÕES */
+
+#idiomas,
+#certificacoes {
+line-height: 1.7;
+}
+
+/* LINKS */
 
 a:hover {
-    text-decoration: underline;
+text-decoration: underline;
+}
+
+/* RODAPÉ */
+
+#rodape {
+text-align: center;
+margin-top: 35px;
+padding-top: 15px;
+border-top: 1px solid #e2e8f0;
+}
+
+#rodape p {
+font-size: 12px;
+color: #94a3b8;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+body {
+    padding: 10px;
+}
+
+#curriculo {
+    padding: 22px 17px;
+}
+
+#cabecalho {
+    flex-direction: column;
+    text-align: center;
+}
+
+#fullName {
+    font-size: 24px;
+}
+
+#contatos-lista {
+    flex-direction: column;
+    gap: 8px;
+}
+
 }
