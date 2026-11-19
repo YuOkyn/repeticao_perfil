@@ -1,70 +1,176 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<!DOCTYPE html><html lang="pt-BR"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - João</title>
-    <!-- Linkando o arquivo CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Currículo Profissional</title>
 
-    <main class="cv-container">
-        <!-- Cabeçalho com Foto e Informações Pessoais -->
-        <header class="cv-header">
-            <!-- A foto será inserida dinamicamente aqui pelo JavaScript -->
-            <div id="photoContainer"></div>
-            
-            <div class="header-info">
-                <h1 id="fullName"></h1>
-                <h2 id="professionalTitle"></h2>
-                <p id="email"></p>
-                <p id="phone"></p>
-                <p id="location"></p>
-                <p><a id="github" href="#" target="_blank"></a></p>
-            </div>
-        </header>
+<link rel="stylesheet" href="style.css">
 
-        <!-- Resumo Profissional -->
-        <section class="cv-section">
-            <h3>Resumo Profissional</h3>
-            <p id="summaryDescription"></p>
-            <p><strong>Objetivo:</strong> <span id="careerObjective"></span></p>
-        </section>
+</head><body><main id="curriculo">
 
-        <!-- Experiência Profissional -->
-        <section class="cv-section">
-            <h3>Experiência Profissional</h3>
-            <div id="experienceContainer"></div>
-        </section>
+    <!-- CABEÇALHO -->
+    <header id="cabecalho">
 
-        <!-- Educação -->
-        <section class="cv-section">
-            <h3>Educação</h3>
-            <div id="educationContainer"></div>
-        </section>
+        <div id="foto-container">
+            <img id="profilePhoto" src="" alt="Foto de perfil">
+        </div>
 
-        <!-- Habilidades -->
-        <section class="cv-section">
-            <h3>Habilidades Técnicas</h3>
-            <ul id="skillsContainer" class="skills-list"></ul>
-            <p><strong>Metodologias/Ferramentas:</strong> <span id="methodologies"></span></p>
-        </section>
+        <div id="informacoes-principais">
+            <h1 id="fullName"></h1>
+            <h2 id="professionalTitle"></h2>
+            <p id="location"></p>
+        </div>
 
-        <!-- Projetos -->
-        <section class="cv-section">
-            <h3>Projetos</h3>
-            <div id="projectsContainer"></div>
-        </section>
+    </header>
 
-        <!-- Idiomas -->
-        <section class="cv-section">
-            <h3>Idiomas</h3>
-            <div id="languagesContainer"></div>
-        </section>
-    </main>
 
-    <!-- Linkando o arquivo JavaScript (o 'defer' garante que o script rode após o HTML carregar) -->
-    <script src="script.js" defer></script>
+    <!-- CONTATOS -->
+    <section id="contatos">
+
+        <h2>Contato</h2>
+
+        <div id="contatos-lista">
+            <p id="email"></p>
+            <p id="phone"></p>
+            <p id="whatsapp"></p>
+
+            <a id="linkedin" target="_blank"></a>
+            <a id="github" target="_blank"></a>
+            <a id="portfolio" target="_blank"></a>
+            <a id="website" target="_blank"></a>
+        </div>
+
+    </section>
+
+
+    <!-- RESUMO PROFISSIONAL -->
+    <section id="resumo">
+
+        <h2>Resumo profissional</h2>
+
+        <p id="description"></p>
+
+        <div id="resumo-detalhes">
+            <p id="yearsOfExperience"></p>
+            <p id="mainSpecialization"></p>
+            <p id="careerObjective"></p>
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIÊNCIA PROFISSIONAL -->
+    <section id="experiencia">
+
+        <h2>Experiência profissional</h2>
+
+        <div id="professionalExperience"></div>
+
+    </section>
+
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao">
+
+        <h2>Formação acadêmica</h2>
+
+        <div id="education"></div>
+
+    </section>
+
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+
+        <h2>Habilidades</h2>
+
+        <h3>Conhecimentos técnicos</h3>
+        <div id="technical"></div>
+
+        <h3>Habilidades comportamentais</h3>
+        <div id="behavioral"></div>
+
+        <h3>Ferramentas</h3>
+        <div id="tools"></div>
+
+        <h3>Metodologias</h3>
+        <div id="methodologies"></div>
+
+    </section>
+
+
+    <!-- IDIOMAS -->
+    <section id="idiomas">
+
+        <h2>Idiomas</h2>
+
+        <div id="languages"></div>
+
+    </section>
+
+
+    <!-- CERTIFICAÇÕES -->
+    <section id="certificacoes">
+
+        <h2>Certificações</h2>
+
+        <div id="certifications"></div>
+
+    </section>
+
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+
+        <h2>Projetos</h2>
+
+        <div id="projects"></div>
+
+    </section>
+
+
+    <!-- CURSOS -->
+    <section id="cursos">
+
+        <h2>Cursos complementares</h2>
+
+        <div id="courses"></div>
+
+    </section>
+
+
+    <!-- INFORMAÇÕES ADICIONAIS -->
+    <section id="informacoes-adicionais">
+
+        <h2>Informações adicionais</h2>
+
+        <p id="availability"></p>
+        <p id="workModel"></p>
+        <p id="travelAvailability"></p>
+        <p id="additionalNotes"></p>
+
+    </section>
+
+
+    <!-- PREFERÊNCIAS -->
+    <section id="preferencias">
+
+        <h2>Preferências profissionais</h2>
+
+        <div id="targetPositions"></div>
+        <div id="targetIndustries"></div>
+        <div id="preferredLocations"></div>
+        <p id="preferredWorkModel"></p>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer id="rodape">
+        <p>Currículo profissional</p>
+    </footer>
+
+</main>
+
+<script src="main.js"></script>
+
 </body>
 </html>
